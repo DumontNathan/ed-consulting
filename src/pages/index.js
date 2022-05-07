@@ -2,14 +2,18 @@ import React from "react"
 import ReactFullpage from "@fullpage/react-fullpage"
 import Menu from "../components/menu/menu"
 import Intro from "../components/Intro/Intro"
+import Formations from "../components/Formations/Formations"
 
 const fullpageOptions = {
   anchors: ["firstPage", "secondPage", "thirdPage"],
-  sectionsColor: ["#282c34", "#ff5f45", "#0798ec"],
+  sectionsColor: ["#F49F0A", "#EFCA08", "#00A6A6"],
   callbacks: ["onLeave", "afterLoad"],
   navigation: true,
+  navigationTooltips: ['1', '2', '3'],
   parallax: true,
 	parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+  scrollingSpeed: 1500,
 }
 
 const FullpageWrapper = fullpageProps => (
@@ -31,15 +35,7 @@ const FullpageWrapper = fullpageProps => (
             <Intro />
           </div>
           <div className="section">
-            <div className="slide">
-              <h3>Slide 2.1</h3>
-            </div>
-            <div className="slide">
-              <h3>Slide 2.2</h3>
-            </div>
-            <div className="slide">
-              <h3>Slide 2.3</h3>
-            </div>
+            <Formations />
           </div>
           <div className="section">
             <h3>Section 3</h3>

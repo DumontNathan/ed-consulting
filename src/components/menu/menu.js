@@ -15,7 +15,7 @@ const Menu = () => (
       <a href="#firstPage">Introduction</a>
     </li>
     <li data-menuanchor="secondPage">
-      <a href="#secondPage">Second section</a>
+      <a href="#secondPage">Formations</a>
     </li>
     <li data-menuanchor="thirdPage">
       <a href="#thirdPage">Third section</a>
