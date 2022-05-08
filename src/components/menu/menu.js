@@ -1,31 +1,27 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react"
+import PropTypes from "prop-types"
+import "./menu.css"
 
-const Menu = () => (
-  <div
-  className="menu"
-  style={{
-    position: "fixed",
-    top: 0,
-    zIndex: 100,
-  }}
->
-  <ul id="myMenu">
-    <li data-menuanchor="firstPage" className="active">
-      <a href="#firstPage">Introduction</a>
-    </li>
-    <li data-menuanchor="secondPage">
-      <a href="#secondPage">Formations</a>
-    </li>
-    <li data-menuanchor="thirdPage">
-      <a href="#thirdPage">Third section</a>
-    </li>
-  </ul>
-</div>
-);
+const Menu = ({ sticky }) => {
+  return (
+    <nav className="navbar">
+      <ul className="navbar--link">
+        <li data-menuanchor="firstPage" className="active">
+          <a href="#firstPage">Introduction</a>
+        </li>
+        <li data-menuanchor="secondPage">
+          <a href="#secondPage">Formations</a>
+        </li>
+        <li data-menuanchor="thirdPage">
+          <a href="#thirdPage">Third section</a>
+        </li>
+      </ul>
+    </nav>
+  )
+}
 
-Menu.propTypes = {};
+Menu.propTypes = {}
 
-Menu.defaultProps = {};
+Menu.defaultProps = {}
 
-export default Menu;
+export default Menu
