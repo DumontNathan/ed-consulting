@@ -7,13 +7,13 @@ const Menu = ({ sticky }) => {
     <nav className="navbar">
       <ul className="navbar--link">
         <li data-menuanchor="firstPage" className="active">
-          <a href="#firstPage">Introduction</a>
+          <a href="#firstPage">INTRODUCTION</a>
         </li>
         <li data-menuanchor="secondPage">
-          <a href="#secondPage">Formations</a>
+          <a href="#secondPage">FORMATIONS</a>
         </li>
         <li data-menuanchor="thirdPage">
-          <a href="#thirdPage">Third section</a>
+          <a href="#thirdPage">GODASSES</a>
         </li>
       </ul>
     </nav>
