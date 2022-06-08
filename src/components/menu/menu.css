@@ -27,7 +27,8 @@
     font-weight: bold;
     color: rgb(0, 0, 0);
     position: relative;
-    padding: 10px 20px;
+    margin: 0px 20px;
+    padding: 10px 0px;
     overflow: hidden;
   }
 
